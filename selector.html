@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        justify-items: center;
+
+        background-color: rgb(235, 228, 228);
+      }
+      .nav-bar {
+        background-color: rgb(48, 174, 216);
+        width: 100%;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+      }
+      a {
+        text-decoration: none;
+        letter-spacing: 0.5;
+        text-transform: uppercase;
+        color: white;
+        font-weight: lighter;
+      }
+      main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        justify-items: center;
+        align-self: center;
+        gap: 10px;
+        margin-top: 10px;
+      }
+      .parent-1 {
+        border: 1px solid white;
+        background-color: white;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+
+        height: 100px;
+        width: 700px;
+
+      }
+      .parent-2 {
+        border: 1px solid white;
+        background-color: white;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+
+        height: 200px;
+        width: 700px;
+      }
+      .child1 {
+        display: flex;
+        flex-direction: column;
+      }
+      .child2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+      }
+      .skills {
+        border: 1px solid white;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        
+
+        height: 250px;
+        width: 700px;
+      }
+      .body{
+        height: 90%;
+        padding: 10px;
+      }
+      
+      table {
+        width: 100%;
+        height: 90%;
+       
+            
+            border-collapse: collapse; 
+      }
+      table, td, th {
+        border: 1px solid #ddd;
+        text-align: left;
+        padding-left: 10px;
+       }
+       .work{
+        border: 1px solid white;
+        background-color: white;
+        display: flex;
+        flex-wrap: wrap;
+       
+        /* justify-content: center;
+        align-items: center;
+        justify-items: center; */
+        height: 300px;
+        gap: 20px;
+ width: 700px;
+       
+ 
+       }
+       .child {
+        display: flex;
+       
+      
+        flex-wrap: wrap;
+        gap: 20px;
+       }
+       .one{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        border: 1px solid #ddd;
+        width: 300px;
+        height: 100px;
+        background-color: #c0c0c0;
+       }
+       .two{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        border: 1px solid #ddd;
+        width: 300px;
+        height: 100px;
+        background-color: #c0c0c0;
+       }
+       .three{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        border: 1px solid #ddd;
+        width: 300px;
+        height: 100px;
+        background-color: #c0c0c0;
+       }
+       .contacts{
+        border: 1px solid white;
+        background-color: white;
+        display: flex;
+       flex-direction: column;
+       
+        /* justify-content: center;
+        align-items: center;
+        justify-items: center; */
+        height: 500px;
+        gap: 20px;
+ width: 700px;
+
+       }
+       .forms {
+
+        gap: 10px;
+       }
+
+
+
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="nav-bar">
+          <a href="">home</a><a href="">About</a><a href="">Skills</a
+          ><a href="">Portfolio</a><a href=""> contact</a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="parent-1">
+        <h1 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">well come to my portfolio</h1>
+      </div>
+
+      <div class="parent-2">
+        <div class="child1">
+          <h2>About Me</h2>
+          <img
+            src="image.png"
+            alt=""
+            width="70px"
+            height="50%"
+            style="border-radius: 50%"
+          />
+        </div>
+        <div class="child2">
+          <p>
+            Hello! i am web developer with passion for creating responsive
+            web-pages
+          </p>
+        </div>
+      </div>
+      <div class="skills">
+        
+       <div class="body">
+          <h1>my Skills</h1>
+        <table style="border: none;">
+          <thead>
+          
+          <tr style="background-color: rgb(37, 161, 238); color: white; height: 40px;">
+          
+            
+            <th>Skills</th>
+            <th>proficiency</th>
+          </tr>
+        </thead>
+            <tbody>
+            <tr>
+              <td>Html</td>
+              <td>Expert</td>
+             <tr>
+              <td>Css</td>
+              <td>Advanced</td>
+             </tr>
+              <tr>
+                <td>Javascript</td>
+              <td>Intermediate</td>
+              </tr>
+            </tr>
+          </tbody>
+        </table>
+       </div>
+      </div>
+      <div class="work">
+        <h3 style="font-size: 30px; font-family: Arial, Helvetica, sans-serif; padding-left: 20px; padding-top: 15px;">work</h3>
+    
+       <div class="child">
+        <div class="child one "><img src="" alt="project1">
+          <h3>project one</h3>
+          <span>description of project one</span>
+
+        </div>
+        <div class="child two">
+          <img src="" alt="project2">
+          <h3>project two</h3>
+          <span>description of project two</span>
+        </div>
+        <div class="child three">
+          <img src="" alt="project3">
+          <h3>project three</h3>
+          <span>description of project three</span>
+        </div>
+       </div>
+      </div>
+      <div class="contacts">
+        <div class="forms">
+          <form action="" style=" display: flex;
+          flex-direction: column;
+          padding: 20px;">
+            <label for="name">Name:-</label>
+            <input type="text" id="name" style="padding: 20px;"><br>
+            <label for="email">Email:-</label>
+            <input type="email" id="email" style="padding: 20px";> <br>
+            <label for="subject">Subject:-</label>
+            <input type="text" id="subject" style="padding: 20px"><br>
+            <label for="name">Message:-</label>
+            <input type="text" id="name" style="padding: 20px">
+
+          </form>
+          <button type="submit" style="padding: 20px; margin-left: 20px; background-color: greenyellow; color: white;">Send Message</button>
+
+        </div>
+
+      </div>
+    </main>
+  </body>
+</html>
